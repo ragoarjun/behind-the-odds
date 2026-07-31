@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* =======================================
+   Premium Scrollbar
+======================================= */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ef4444 #0f0f0f;
+}
+
+/* Chrome, Edge, Safari */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2f2f2f;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ef4444;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
